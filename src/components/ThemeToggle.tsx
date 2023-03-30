@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/ui/DropDownMenu";
-import Button from "./ui/Button";
+import Button from "@/ui/Button";
 import Icons from "@/components/Icons";
 
 interface ThemeToggleProps {}
