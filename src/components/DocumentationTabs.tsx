@@ -4,7 +4,7 @@ import { FC } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/ui/Tabs";
 import SimpleBar from "simplebar-react";
 import Code from "@/components/Code";
-import { nodejs, python } from "@/helpers/DocumentationCode";
+import { nodejs, python } from "@/helpers/documentation-code";
 
 const DocumentationTabs: FC = () => {
   return (
