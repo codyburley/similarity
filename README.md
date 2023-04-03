@@ -1,38 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Similarity API
 
-## Getting Started
+Similarity is an API designed to compare two strings and return a similarity rating.
 
-First, run the development server:
+## Live Site
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Deployed site at [Similarity API](https://similarity-git-main-codyburley.vercel.app/) using Vercel.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Rate Limited API routes
+- Protection of sensitive routes
+- Google authentication
+- Typescript
+- A complete API key system to create & revoke user keys
+- Radix UI Primitives
+- Tailwind CSS
+- Fonts with next/font
+- Icons from Lucide
+- Beautiful dark mode with next-themes
+- Class merging with taiwind-merge
+- Animation with tailwindcss-animate
+- Conditional classes with clsx
+- Variants with class-variance-authority
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Environment Variables
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To run this project, you will need to add the following environment variables to your .env file
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`NEXTAUTH_SECRET`
 
-## Learn More
+`NEXTAUTH_URL`
 
-To learn more about Next.js, take a look at the following resources:
+`GOOGLE_CLIENT_ID`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`GOOGLE_CLIENT_SECRET`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`DATABASE_URL`
 
-## Deploy on Vercel
+`OPENAI_API_KEY`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`REDIS_URL`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`REDIS_SECRET`
+
+## Lessons Learned
+
+This was a practice project in order to reinforce best practices with TypeScript and backend development, and to learn NextJS 13 and TailwindCSS.
+
+#### Frontend Lessons
+
+- How to use TailwindCSS and manage themes in combination with next-themes
+- A multitude of TypeScript best practices and features, simple things like a custom TypeScript component code snippet to more complex interface management and features of NextJS
+- How NextJS differs a lot from React, being my first project in NextJS there was a lot of growing pains but for every pain there was even more positives like built in routing
+
+#### Backend Lessons
+
+- How to use NextJS to build an API, this was a really fun experience to be able to manage both the frontend and backend in one project so cleanly
+- Prisma made working with the database a dream
+- Being my first full-stack application of this size in quite sometime, this project helped with my MySQL and database management
