@@ -59,13 +59,11 @@ const Code: FC<CodeProps> = ({
           }}
         >
           {tokens.map((line, i) => {
-            // eslint-disable-next-line no unused-vars
             const { key, ...rest } = getLineProps({ line, key: i });
 
             return (
               <div key={`line-${i}`} style={{ position: "relative" }} {...rest}>
                 {line.map((token, index) => {
-                  // eslint-disable-next-line no unused-vars
                   const { key, ...props } = getTokenProps({ token, i });
                   return <span key={index} {...props}></span>;
                 })}

@@ -46,7 +46,7 @@
     "sharp": "^0.32.0",
     "simplebar-react": "^3.2.3",
     "tailwind-merge": "^1.11.0",
-    "typescript": "5.0.2",
+    "typescript": "5.0.3",
     "zod": "^3.21.4"
   },
   "devDependencies": {
